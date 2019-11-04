@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f1eb37ec03.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Detail Page</title>
 </head>
 <body>
     <header>
+        <!--Navigation Bar Structure-->
         <nav class="d-flex justify-content-between align-items-center" id="navigation-bar">
             <span class="nav-icons d-flex align-items-center" id="location-icon">   
                     <i class="fas fa-map-marker-alt"></i>
@@ -22,8 +24,7 @@
             </span>
             <span class="nav-icons d-flex align-items-center">
                 <span class="title">
-                    <span class="first-style">Swip</span>
-                    <span class="second-style">ex</span>
+                    <span class="first-style">Swip<span class="second-style">ex</span></span>
                 </span>
             </span>
             <ul class="nav-icons d-flex mb-0">
@@ -42,5 +43,71 @@
             </ul>
         </nav>
     </header>
+    <!--Page's Main Section Structure-->
+    <main>
+        <div class="body-page row m-0 d-flex flex-xl-row flex-lg-row flex-md-colum flex-sm-column">
+            <div class="user-information col-xl-3 col-lg-3">
+                <div class="user-profile mt-5">
+                    <div class="profile-info d-flex flex-row">
+                        <img class="img-fluid user-photo" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="men">
+                        <div class="user-info-wrapper d-flex flex-column pl-1 justify-content-center">
+                            <div class="account-info d-flex flex-column justify-content-center">
+                                <h5 class="mb-1">
+                                    Vlad Ermakov
+                                    <i class="fas fa-cog custom-setting"></i>
+                                </h5>
+                                <span class="mb-3 span-info">Status:&nbsp;<span class="inner-span-info">Without premium</span>
+                                </span>
+                            </div>
+                            <hr id="info-line">
+                            <div class="mt-2">
+                                <i class="fas fa-heart mr-1"></i>
+                                257
+                                <span class="premium-button ml-1 pr-2">
+                                    <i class="far fa-check-circle ml-1"></i>
+                                    Get Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul id="menu-account" class="d-flex flex-column justify-content-between">
+                    <li>
+                        <i class="fas fa-users user-icons"></i>
+                        <span class="list-account">Start Meeting</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-centos user-icons"></i>
+                        <span class="list-account">People Nearby</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-video user-icons"></i>
+                        <span class="list-account">Channel and Streming</span>
+                    </li>
+                    <li>
+                        <i class="far fa-comments user-icons"></i>
+                        <span class="list-account">Messages</span>
+                    </li>
+                    <li>
+                        <i class="far fa-star user-icons"></i>
+                        <span class="list-account">Featured People</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-gift user-icons"></i>
+                        <span class="list-account">Gifts</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line user-icons"></i>
+                        <span class="list-account">Raiting of Popularity</span>
+                    </li>
+                    <li>
+                        <i class="far fa-list-alt user-icons"></i>
+                        <span class="list-account">Dialy Tasks</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="foto-section col-xl-6 col-lg-3 col-md-12 col-sm-12"></div>
+            <div class="acquittances-info col-xl-3 col-lg-3 col-md-12 col-sm-12"></div>
+        </div>
+    </main>
 </body>
 </html>
