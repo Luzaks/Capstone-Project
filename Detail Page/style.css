@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 14px;
+  width: 100vw;
+  background-color: black;
+}
+
+#navigation-bar {
+  border-radius: 5px 5px 1px 1px;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.span-icons {
+  height: 0.9rem;
+}
+
+#location-icon {
+  margin-left: 2.7rem;
+}
+
+#location {
+  color: #d3d3d3;
+}
+
+#location-city {
+  text-decoration: underline;
+}
+
+.fas,
+.far {
+  height: 0.9rem;
+  font-size: 0.8rem;
+  width: 0.9rem;
+  fill: black;
+}
+
+.first-style {
+  color: #4e50b8;
+  display: inline-block;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5rem;
+}
+
+.second-style {
+  color: #f0916e;
+  display: inline-block;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5rem;
+}
+
+ul.nav-icons {
+  list-style: none;
+  margin-right: 2.7rem;
+}
+
+ul.nav-icons > li {
+  display: inline;
+  margin: 0 0.7rem;
+  font-size: 1.5rem;
+}
+
+.user-icons {
+  height: 1.3rem;
+  font-size: 1.3rem;
+  width: 1.3rem;
+}
