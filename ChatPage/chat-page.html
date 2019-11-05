@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1eb37ec03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Chat Page</title>
+</head>
+<body>
+    <header>
+        <!--Navigation Bar Structure-->
+        <nav class="d-flex justify-content-between align-items-center" id="navigation-bar">
+            <span class="nav-icons d-flex align-items-center" id="location-icon">   
+                    <i class="fas fa-map-marker-alt"></i>
+                <span id="location">Location:&nbsp; </span>
+                <span id="location-city">London
+                    <i class="fas fa-angle-double-down"></i>
+                </span>
+            </span>
+            <span class="nav-icons d-flex align-items-center">
+                <span class="title">
+                    <span class="first-style">Swip<span class="second-style">ex</span></span>
+                </span>
+            </span>
+            <ul class="nav-icons d-flex mb-0">
+                <li>
+                    <i class="far fa-list-alt user-icons"></i>
+                </li>
+                <li>
+                    <i class="far fa-bell user-icons"></i>
+                </li>
+                <li>
+                    |
+                </li>
+                <li>
+                    <i class="fas fa-user-circle user-icons"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="body-page row m-0 d-flex">
+            <!--User Account Information-->
+            <div class="user-information">
+                <div class="user-profile">
+                    <div class="profile-info d-flex flex-row">
+                        <img class="img-fluid user-photo" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="men">
+                        <div class="user-info-wrapper d-flex flex-column pl-1 justify-content-center">
+                            <div class="account-info d-flex flex-column justify-content-center">
+                                <h5 class="mb-1">
+                                    Vlad Ermakov
+                                    <i class="fas fa-cog custom-setting"></i>
+                                </h5>
+                                <span class="mb-3 span-info">Status:&nbsp;<span class="inner-span-info">Without premium</span>
+                                </span>
+                            </div>
+                            <hr id="info-line">
+                            <div class="mt-2">
+                                <i class="fas fa-heart mr-1"></i>
+                                257
+                                <span class="premium-button ml-1 pr-2">
+                                    <i class="far fa-check-circle ml-1"></i>
+                                    Get Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul id="menu-account" class="d-flex flex-column justify-content-between">
+                    <li>
+                        <i class="fas fa-users user-icons"></i>
+                        <span class="list-account">Start Meeting</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-centos user-icons"></i>
+                        <span class="list-account">People Nearby</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-video user-icons"></i>
+                        <span class="list-account">Channel and Streming</span>
+                    </li>
+                    <li>
+                        <i class="far fa-comments user-icons"></i>
+                        <span class="list-account">Messages</span>
+                    </li>
+                    <li>
+                        <i class="far fa-star user-icons"></i>
+                        <span class="list-account">Featured People</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-gift user-icons"></i>
+                        <span class="list-account">Gifts</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line user-icons"></i>
+                        <span class="list-account">Raiting of Popularity</span>
+                    </li>
+                    <li>
+                        <i class="far fa-list-alt user-icons"></i>
+                        <span class="list-account">Dialy Tasks</span>
+                    </li>
+                </ul>
+            </div>
+            <!--Chat page with list of chats-->
+            <div class="chat-container d-flex">
+                <div id="list-chat">
+                    <div class="header-chat d-flex justify-content-around align-items-center">
+                        <div>    
+                            <i class="fas fa-search"></i>
+                            <span>&nbsp;Search by users</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-edit"></i>
+                        </div>
+                    </div>
+                    <div id="scroll-list-chat"> 
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <h6>Esmeralda Muñoz</h6>
+                                <span>
+                                    <i class="fas fa-check"></i>
+                                    Hola! :9 estábamos haciendo la tarea del viernes en tu casa
+                                </span>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-chat-list d-flex">
+                        <div class="chat-menu d-flex justify-content-center align-items-center">
+                            <i class="fab fa-centos"></i>
+                        </div>
+                        <div class="chat-menu menu-item-2 d-flex justify-content-center align-items-center">
+                            <i class="far fa-envelope-open"></i>
+                        </div>
+                        <div class="chat-menu d-flex align-items-center justify-content-center">
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="chat-detail" class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                            <i class="fas fa-sms"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
