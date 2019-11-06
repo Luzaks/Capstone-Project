@@ -118,7 +118,7 @@ main {
 
 .span-info {
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: #d3d3d3;
 }
 
@@ -142,6 +142,7 @@ main {
   border-radius: 5px;
   color: #fff;
   font-family: 'Lato', sans-serif;
+  font-weight: 500;
   padding: 2px;
 }
 
@@ -149,10 +150,11 @@ ul#menu-account {
   list-style: none;
   margin-top: 10%;
   height: 60%;
+  padding-left: 2.5%;
 }
 
 .list-account {
-  margin-left: 1%;
+  margin-left: 2.5%;
 }
 
 /* Chat Row Style */
@@ -277,14 +279,14 @@ div.chat-elipsis {
 
 .container-message {
   width: fit-content;
-  background-color: #D1DDFF;
+  background-color: #d1ddff;
   border-radius: 7px;
   padding: 2%;
   margin: 0 5%;
 }
 
 .user-message {
-  background-color: #D1CBDA;
+  background-color: #d1cbda;
 }
 
 .message-text {
@@ -314,14 +316,16 @@ div.chat-elipsis {
 }
 
 @media screen and (max-width: 1200px) {
-  .nav-icons,
-  .user-information {
-    display: none !important;
+  main {
+    height: 100%;
+    width: 100%;
   }
 
-  .small-header {
-    width: 100%;
-    height: 60px;
+  header,
+  .user-information,
+  .small-header,
+  #list-chat {
+    display: none !important;
   }
 
   .chat-container {
@@ -331,71 +335,20 @@ div.chat-elipsis {
     background-color: transparent;
   }
 
-  #list-chat {
-    width: 100%;
+  .chat-detail-pag {
+    background-color: #fff;
   }
 
   #chat-detail {
-    display: none !important;
+    width: 100%;
   }
 
-  .header-chat {
-    display: none !important;
+  #scroll-chat-detail {
+    height: calc(100% - 120px);
   }
 
-  #scroll-list-chat {
-    height: calc(100% - 55px);
-  }
-
-  .bubble-chat {
-    width: 90%;
-    margin: 5%;
-    height: 10vh;
+  #chat-writing-bar {
     background-color: #fff;
-    border-radius: 5px;
-  }
-
-  .chat-elipsis {
-    width: 85%;
-  }
-
-  .chat-menu {
-    display: none !important;
-  }
-
-  .footer-chat-list {
-    background-color: #fff;
-    position: relative;
-  }
-
-  .small-chat-menu {
-    width: 20%;
-    position: relative;
-  }
-
-  .small-footer-icon-bigger {
-    position: absolute;
-    background-color: #4e50b8;
-    border-radius: 5px;
-    color: white;
-    width: 70%;
-    height: 100%;
-    font-size: 1.6rem;
-    top: -25%;
-    -webkit-box-shadow: 57px 63px 117px -8px rgba(0, 0, 0, 0.43);
-    -moz-box-shadow: 57px 63px 117px -8px rgba(0, 0, 0, 0.43);
-    box-shadow: 57px 63px 117px -8px rgba(0, 0, 0, 0.43);
-  }
-
-  .chat-elipsis > h5 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-  }
-
-  .buble-chat-text {
-    color: #000;
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
   }
 }
 
