@@ -77,11 +77,15 @@ ul.nav-icons > li {
 
 /* Page's Main Section Style */
 
-/* main,
+main {
+  height: calc(100% - 60px);
+  width: 100%;
+}
+
 .body-page {
   height: 100%;
   width: 100%;
-} */
+}
 
 .user-information {
   margin-top: 2.5%;
@@ -147,7 +151,6 @@ ul.nav-icons > li {
 }
 
 .acquittances-info {
-  height: fit-content;
   margin: 2.5% 0;
 }
 
@@ -182,11 +185,6 @@ ul#menu-account {
   height: 33.333%;
   top: 33.333%;
   right: -15%;
-}
-
-div#galerie {
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 div#galerie > .photos {
@@ -322,6 +320,14 @@ div#galerie > .photos {
 
 .become-span {
   color: #d3d3d3;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.become-header {
+  color: #414464;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
 }
 
 .purchase-anchor {
@@ -344,7 +350,7 @@ div#galerie > .photos {
 
 .contact-info {
   border-bottom: 1px #d3d3d3 solid;
-  padding: 3% 1%;
+  padding: 3.2% 1%;
   width: 100%;
 }
 
@@ -384,18 +390,18 @@ div#galerie > .photos {
 
 .view-page {
   background-color: #d3d3d3;
-  border: none;
   border-radius: 5px;
-  color: #a8a8a8;
+  color: #414464;
   font-family: 'Lato', sans-serif;
   font-size: 0.9rem;
+  border: 1px #414464 solid;
   outline: none;
   padding: 2% 5%;
   width: 75%;
 }
 
 .margins {
-  margin-bottom: 2.5%;
+  margin-bottom: 1.5%;
 }
 
 .communicate {
@@ -453,8 +459,13 @@ div#galerie > .photos {
   }
 
   .contact-photo {
-    height: 0;
-    padding-top: 65vh;
+    height: 60%;
+  }
+
+  .new-container {
+    width: 100%;
+    height: 60%;
+    background-color: #4e50b8;
   }
 
   .acquittances-info,
@@ -462,5 +473,13 @@ div#galerie > .photos {
     width: 23%;
     margin-right: 1%;
     margin-left: 1%;
+  }
+
+  .up-acc-media-query {
+    margin-bottom: 5%;
+  }
+
+  .personal-information-contact {
+    height: 90%;
   }
 }
