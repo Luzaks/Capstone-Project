@@ -6,7 +6,7 @@
 
 html,
 body {
-  background-color: #d3d3d3;
+  background-color: #eff0f2;
   font-family: 'Fredoka One', cursive;
   font-size: 14px;
   width: 100vw;
@@ -14,6 +14,14 @@ body {
 }
 
 /* Navigation Bar Style */
+
+.fas,
+.far {
+  height: 0.9rem;
+  font-size: 0.8rem;
+  width: 0.9rem;
+  fill: black;
+}
 
 #navigation-bar {
   border-radius: 5px 5px 1px 1px;
@@ -30,20 +38,22 @@ body {
   margin-left: 2.7rem;
 }
 
+.fa-map-marker-alt {
+  background-color: #eff0f2;
+  border-radius: 5px;
+  color: #c2c8ce;
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 2rem;
+}
+
 #location {
-  color: #d3d3d3;
+  color: #c2c8ce;
 }
 
 #location-city {
   text-decoration: underline;
-}
-
-.fas,
-.far {
-  height: 0.9rem;
-  font-size: 0.8rem;
-  width: 0.9rem;
-  fill: black;
+  text-decoration-color: #c2c8ce;
 }
 
 .first-style {
@@ -64,12 +74,14 @@ ul.nav-icons {
 }
 
 ul.nav-icons > li {
+  color: #c2c8ce;
   display: inline;
   margin: 0 0.7rem;
   font-size: 1.5rem;
 }
 
 .user-icons {
+  color: #c2c8ce;
   height: 1.3rem;
   font-size: 1.3rem;
   width: 1.3rem;
@@ -111,7 +123,7 @@ main {
 }
 
 .custom-setting {
-  color: #d3d3d3;
+  color: #c2c8ce;
   font-size: 1.2rem;
   margin-right: 2rem;
 }
@@ -119,7 +131,7 @@ main {
 .span-info {
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-  color: #d3d3d3;
+  color: #c2c8ce;
 }
 
 .inner-span-info {
@@ -127,7 +139,7 @@ main {
 }
 
 #info-line {
-  border-bottom: 1px #d3d3d3 solid;
+  border-bottom: 1px #eff0f2 solid;
   border-width: 100%;
   margin: 0;
 }
@@ -154,10 +166,14 @@ ul#menu-account {
 }
 
 .list-account {
+  color: #c2c8ce;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
   margin-left: 2.5%;
 }
 
-/* Chat Row Style */
+/* Chat Detail Pahe Style */
 
 .chat-container {
   background-color: #fff;
@@ -170,12 +186,12 @@ ul#menu-account {
 #list-chat {
   width: 34%;
   height: 100%;
-  border-right: 1px #d3d3d3 solid;
+  border-right: 1px #eff0f2 solid;
   display: inline-block;
 }
 
 .header-chat {
-  border-bottom: 1px #d3d3d3 solid;
+  border-bottom: 1px #eff0f2 solid;
   width: 100%;
   height: 50px;
 }
@@ -200,14 +216,14 @@ ul#menu-account {
 }
 
 .menu-item-2 {
-  border-left: 1px #d3d3d3 solid;
-  border-right: 1px #d3d3d3 solid;
+  border-left: 1px #eff0f2 solid;
+  border-right: 1px #eff0f2 solid;
 }
 
 .footer-chat-list {
   width: 100%;
   height: 55px;
-  border-top: 1px #d3d3d3 solid;
+  border-top: 1px #eff0f2 solid;
 }
 
 #chat-detail {
@@ -224,18 +240,32 @@ ul#menu-account {
 }
 
 .bubble-chat {
-  border-bottom: 1px #d3d3d3 solid;
+  border-bottom: 1px #eff0f2 solid;
   width: 100%;
   height: 10vh;
 }
 
-.chat-elipsis > h5 {
+.status-container {
+  width: 90%;
+}
+
+.status-container > h5 {
   font-size: 0.95rem;
+  display: inline;
 }
 
 .buble-chat-text {
   font-size: 0.8rem;
-  color: #414464;
+  color: #c2c8ce;
+}
+
+.green-circle {
+  border-radius: 100%;
+  background-color: green;
+  display: inline-block;
+  height: 0.4rem;
+  width: 0.4rem;
+  margin-left: 5%;
 }
 
 div.chat-elipsis {
@@ -245,10 +275,14 @@ div.chat-elipsis {
   text-overflow: ellipsis;
 }
 
+.checked {
+  color: #4e50b8;
+}
+
 .online-text {
   font-family: 'Lato', sans-serif;
   font-size: 12px;
-  color: #d3d3d3;
+  color: #d3d3dd;
 }
 
 #scroll-chat-detail {
@@ -298,7 +332,7 @@ div.chat-elipsis {
 #chat-writing-bar {
   width: 100%;
   height: 70px;
-  border-top: 1px #d3d3d3 solid;
+  border-top: 1px #eff0f2 solid;
 }
 
 #message-bar {
@@ -307,7 +341,7 @@ div.chat-elipsis {
   margin: 0 6%;
   border-radius: 15px;
   outline: none;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #eff0f2;
 }
 
 .fa-smile {
@@ -350,6 +384,10 @@ div.chat-elipsis {
   #chat-writing-bar {
     background-color: #fff;
   }
+
+  .fa-smile {
+    left: -12.5%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -359,6 +397,7 @@ div.chat-elipsis {
 
   .user-information {
     width: 23%;
+    height: calc(100% - 60px);
     margin-right: 1%;
     margin-left: 1%;
   }

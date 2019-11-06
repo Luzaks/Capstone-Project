@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/f1eb37ec03.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Detail Page</title>
@@ -16,8 +17,8 @@
         <!--Navigation Bar Structure-->
         <nav class="d-flex justify-content-between align-items-center" id="navigation-bar">
             <span class="nav-icons d-flex align-items-center" id="location-icon">   
-                    <i class="fas fa-map-marker-alt"></i>
-                <span id="location">Location:&nbsp; </span>
+                    <i class="fas fa-map-marker-alt d-flex justify-content-center align-items-center"></i>
+                    &nbsp;<span id="location">Location: </span>&nbsp;&nbsp;&nbsp;
                 <span id="location-city">London
                     <i class="fas fa-angle-double-down"></i>
                 </span>
@@ -182,15 +183,15 @@
                     <h6 class="m-0">Filter search</h6>
                     <i class="fas fa-stream"></i>
                 </div>
-                <div class="upgrade-account personal-information-contact d-flex flex-column justify-content-around align-items-center">
-                    <div class="contact-info">
+                <div class="upgrade-account personal-information-contact d-flex flex-column justify-content-between align-items-center">
+                    <div class="contact-info name-contact d-flex flex-column justify-content-around">
                         <span class="become-span"> Name Surnname, Old</span>
                            <div class="contact-ns d-flex justify-content-between align-items-center"> 
                                 <h5 class="m-0">Karina Simons, 23</h5>
                                 <div class="green-circle"></div>
                             </div>
                     </div>
-                    <div class="contact-info d-flex flex-column align-items-start justify-content-between">
+                    <div class="contact-info personal-info-contact d-flex flex-column align-items-start justify-content-between">
                         <div class="margins w-100 d-flex justify-content-between align-items-center">
                             <div>
                                 <span class="become-span"> Location</span>
@@ -206,15 +207,15 @@
                         </div>
                         <div class="margins">
                             <span class="become-span">Languages</span>
-                            <h6 class="m-0 become-header">English (conversational), </n> Polish (native).</h6>
+                            <h6 class="m-0 become-header">English (conversational), Polish (native).</h6>
                         </div>
                         <button type="submit" class="view-page d-flex align-self-center justify-self-center justify-content-center">View page of Karin</button>
                     </div>
-                    <div class="contact-info d-flex justify-content-between border-0">
+                    <div class="contact-info contact-user d-flex justify-content-around align-items-center border-0">
                         <i class="fas fa-comments communicate"></i>
-                        <div>
+                        <div class="text-comm">
                             <h6 class="m-0">Communicate;</h6>
-                            <span class="become-span">Click and you can inmmediately communicate.</span>
+                            <span class="become-span span-communicate">Click and you can inmmediately communicate.</span>
                         </div>
                     </div>
                 </div>
