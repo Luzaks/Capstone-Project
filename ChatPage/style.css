@@ -290,7 +290,7 @@ div.chat-elipsis {
   color: #eff0f2;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .nav-icons,
   .user-information {
     display: none !important;
@@ -376,7 +376,7 @@ div.chat-elipsis {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .small-header {
     display: none !important;
   }

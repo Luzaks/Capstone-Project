@@ -349,7 +349,7 @@ div.chat-elipsis {
   left: -10%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   main {
     height: 100%;
     width: 100%;
@@ -390,7 +390,7 @@ div.chat-elipsis {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .small-header {
     display: none !important;
   }
