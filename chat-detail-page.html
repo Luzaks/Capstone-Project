@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1eb37ec03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css">
+    <title>Chat Detail Page</title>
+</head>
+<body>
+    <header>
+        <!--Navigation Bar Structure-->
+        <nav class="d-flex justify-content-between align-items-center" id="navigation-bar">
+            <span class="nav-icons d-flex align-items-center" id="location-icon">   
+                    <i class="fas fa-map-marker-alt d-flex justify-content-center align-items-center"></i>&nbsp;
+                <span id="location">Location:</span>&nbsp;&nbsp;&nbsp;
+                <span id="location-city">London
+                    <i class="fas fa-angle-double-down"></i>
+                </span>
+            </span>
+            <span class="nav-icons d-flex align-items-center">
+                <span class="title">
+                    <span class="first-style">Swip<span class="second-style">ex</span></span>
+                </span>
+            </span>
+            <ul class="nav-icons d-flex mb-0">
+                <li>
+                    <i class="far fa-list-alt user-icons"></i>
+                </li>
+                <li>
+                    <i class="far fa-bell user-icons"></i>
+                </li>
+                <li>
+                    |
+                </li>
+                <li>
+                    <i class="fas fa-user-circle user-icons"></i>
+                </li>
+            </ul>
+            <div class="small-header d-flex justify-content-around align-items-center">
+                <i class="fas fa-bars"></i>
+                <span>Messages</span>
+                <i class="far fa-edit"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="body-page row m-0 d-flex">
+            <!--User Account Information-->
+            <div class="user-information">
+                <div class="user-profile">
+                    <div class="profile-info d-flex flex-row">
+                        <img class="img-fluid user-photo" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="men">
+                        <div class="user-info-wrapper d-flex flex-column pl-1 justify-content-center">
+                            <div class="account-info d-flex flex-column justify-content-center">
+                                <h5 class="mb-1">
+                                    Vlad Ermakov
+                                    <i class="fas fa-cog custom-setting"></i>
+                                </h5>
+                                <span class="mb-3 span-info">Status:&nbsp;<span class="inner-span-info">Without premium</span>
+                                </span>
+                            </div>
+                            <hr id="info-line">
+                            <div class="mt-2">
+                                <i class="fas fa-heart mr-1"></i>
+                                257
+                                <span class="premium-button ml-1 pr-2">
+                                    <i class="far fa-check-circle ml-1"></i>
+                                    Get Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul id="menu-account" class="d-flex flex-column justify-content-between">
+                    <li>
+                        <i class="fas fa-users user-icons"></i>
+                        <span class="list-account">Start Meeting</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-centos user-icons"></i>
+                        <span class="list-account">People Nearby</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-video user-icons"></i>
+                        <span class="list-account">Channel and Streming</span>
+                    </li>
+                    <li>
+                        <i class="far fa-comments user-icons"></i>
+                        <span class="list-account">Messages</span>
+                    </li>
+                    <li>
+                        <i class="far fa-star user-icons"></i>
+                        <span class="list-account">Featured People</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-gift user-icons"></i>
+                        <span class="list-account">Gifts</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line user-icons"></i>
+                        <span class="list-account">Raiting of Popularity</span>
+                    </li>
+                    <li>
+                        <i class="far fa-list-alt user-icons"></i>
+                        <span class="list-account">Dialy Tasks</span>
+                    </li>
+                </ul>
+            </div>
+            <!--Chat page with list of chats-->
+            <div class="chat-container d-flex">
+                <div id="list-chat">
+                    <div class="header-chat d-flex justify-content-around align-items-center">
+                        <div class="d-flex justify-content-center align-items-center">    
+                            <i class="fas fa-search"></i>
+                            <span>&nbsp;Search by users</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                    </div>
+                    <div id="scroll-list-chat"> 
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    <span class="green-circle"></span>
+                                </div>
+                                <span class="buble-chat-text">
+                                    <i class="fas fa-check checked"></i>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    <span class="green-circle"></span>
+                                </div>
+                                <span class="buble-chat-text">
+                                    <i class="fas fa-check"></i>
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    <span class="green-circle"></span>
+                                </div>
+                                <span class="buble-chat-text">
+                                    <i class="fas fa-check checked"></i>
+                                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                </div>
+                                <span class="buble-chat-text">
+                                    <i class="fas fa-check"></i>
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                </div>
+                                <span class="buble-chat-text">
+                                    <i class="fas fa-check"></i>
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    <span class="green-circle"></span>
+                                </div>
+                                <span class="buble-chat-text">
+                                    <i class="fas fa-check checked"></i>
+                                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, 
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                </div>
+                                <span class="buble-chat-text">
+                                    <i class="fas fa-check"></i>
+                                    Es, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                </div>
+                                <span class="buble-chat-text"> 
+                                    <i class="fas fa-check"></i>
+                                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero 
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                               <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                </div>
+                                <span class="buble-chat-text">
+                                    <i class="fas fa-check checked"></i>
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                </div>
+                                <span class="buble-chat-text">
+                                    <i class="fas fa-check"></i>
+                                    Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'l
+                                </span>                            
+                            </div>
+                        </div>
+                        <div class="bubble-chat d-flex align-items-center justify-content-around">
+                            <img class="chat-img" src="https://i0.wp.com/wp.stolaf.edu/wp-content/uploads/2019/07/nickg.png?resize=1200%2C900&ssl=1" alt="">
+                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
+                                <div class="status-container d-flex justify-content-start align-items-center">    
+                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    <span class="green-circle"></span>
+                                </div>
+                                <span class="buble-chat-text">
+                                    <i class="fas fa-check checked"></i>
+                                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                </span>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-chat-list d-flex">
+                        <div class="chat-menu d-flex justify-content-center align-items-center">
+                            <i class="fab fa-centos"></i>
+                        </div>
+                        <div class="chat-menu menu-item-2 d-flex justify-content-center align-items-center">
+                            <i class="far fa-envelope-open"></i>
+                        </div>
+                        <div class="chat-menu d-flex align-items-center justify-content-center">
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                        <div class="small-chat-menu d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search small-footer-icon"></i>
+                        </div>
+                        <div class="small-chat-menu d-flex align-items-center justify-content-center">
+                            <i class="fab fa-centos small-footer-icon"></i>
+                        </div>
+                        <div class="small-chat-menu d-flex align-items-center justify-content-center">
+                            <i class="fas fa-braille small-footer-icon-bigger d-flex justify-content-center align-items-center"></i>
+                        </div>
+                        <div class="small-chat-menu d-flex align-items-center justify-content-center">
+                            <i class="far fa-comments small-footer-icon"></i>
+                        </div>
+                        <div class="small-chat-menu d-flex align-items-center justify-content-center">
+                            <i class="fas fa-user small-footer-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--Chat Detil Page-->
+                <div id="chat-detail" class="d-flex flex-column align-items-center">
+                    <div class="header-chat chat-detail-pag d-flex justify-content-around align-items-center">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h6 class="m-0">Esmeralda Muñoz</h6>
+                            <span class="online-text">online</span>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div id="scroll-chat-detail">
+                        <div class="chat-conversation d-flex align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message justify-content-center align-items-center message">
+                                <span class="message-text">Lorem ipsum dolor sit amet, id apeirian molestiae disputationi nam. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation d-flex flex-row-reverse align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message user-message justify-content-center align-items-center message">
+                                <span class="message-text">Cu sensibus dignissim duo, usu ne iisque deserunt eloquentiam.</span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation d-flex align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message justify-content-center align-items-center message">
+                                <span class="message-text">Quod elit fierent id mei, populo fabulas definitionem ei pri. Ad eos tota summo, alii adhuc dissentiunt ex mel. Eum dicam ornatus fastidii cu.</span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation d-flex flex-row-reverse align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message user-message justify-content-center align-items-center message">
+                                <span class="message-text">Ipsum utroque invidunt est an, partem omnesque sed in. Debet aperiam accusata et vel, est cu omnes placerat accommodare. Eum in dolorum civibus, harum possim sed ne. Eu feugiat delectus nam, cum in omnis apeirian. Ut sonet possit numquam eos, has vero corrumpit interpretaris id. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation d-flex align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message justify-content-center align-items-center message">
+                                <span class="message-text">Rebum quando id mea, eos ea sint viris utamur, per cu meis mandamus pertinacia. Sed ea quis mollis. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation d-flex flex-row-reverse align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message user-message justify-content-center align-items-center message">
+                                <span class="message-text">Sea iusto sensibus reprimique ei.</span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation d-flex align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message justify-content-center align-items-center message">
+                                <span class="message-text">Ludus consequat consetetur id eam, cum no posse ignota contentiones. Cu pri augue inimicus, ad nam doctus menandri. Ad movet efficiendi voluptatibus mea. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation d-flex flex-row-reverse align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message user-message justify-content-center align-items-center message">
+                                <span class="message-text">Cu sensibus dignissim duo, usu ne iisque deserunt eloquentiam. Nihil eripuit id sea, cu soleat vulputate has. Quod elit fierent id mei, populo fabulas definitionem ei pri. Ad eos tota summo, alii adhuc dissentiunt ex mel. Eum dicam ornatus fastidii cu.</span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation d-flex align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message justify-content-center align-items-center message">
+                                <span class="message-text"> Debet aperiam accusata et vel, est cu omnes placerat accommodare. Eum in dolorum civibus, harum possim sed ne. Eu feugiat delectus nam, cum in omnis apeirian. Ut sonet possit numquam eos, has vero corrumpit interpretaris id. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation d-flex flex-row-reverse align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message user-message justify-content-center align-items-center message">
+                                <span class="message-text"> Pri autem repudiare at, an duo dicunt salutandi, ex audire eruditi his. Ne dolor vitae repudiare mel. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation d-flex align-items-center justify-content-start">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="d-flex container-message justify-content-center align-items-center message">
+                                <span class="message-text">Cibo labore id pri, ad per vero aperiri alienum. Ut laudem legimus consulatu pro, mel ad illud liber, modo rebum honestatis sit no.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chat-writing-bar" class="d-flex justify-content-center align-items-center">
+                        <i class="fas fa-paperclip"></i>
+                        <input id="message-bar" type="text" value="Your message">
+                        <i class="far fa-smile"></i>
+                        <i class="fas fa-upload"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

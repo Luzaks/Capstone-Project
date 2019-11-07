@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/f1eb37ec03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Detail Page</title>
+</head>
+<body>
+    <header>
+        <!--Navigation Bar Structure-->
+        <nav class="d-flex justify-content-between align-items-center" id="navigation-bar">
+            <span class="nav-icons d-flex align-items-center" id="location-icon">   
+                    <i class="fas fa-map-marker-alt d-flex justify-content-center align-items-center"></i>
+                    &nbsp;<span id="location">Location: </span>&nbsp;&nbsp;&nbsp;
+                <span id="location-city">London
+                    <i class="fas fa-angle-double-down"></i>
+                </span>
+            </span>
+            <span class="nav-icons d-flex align-items-center">
+                <span class="title">
+                    <span class="first-style">Swip<span class="second-style">ex</span></span>
+                </span>
+            </span>
+            <ul class="nav-icons d-flex mb-0">
+                <li>
+                    <i class="far fa-list-alt user-icons"></i>
+                </li>
+                <li>
+                    <i class="far fa-bell user-icons"></i>
+                </li>
+                <li>
+                    |
+                </li>
+                <li>
+                    <i class="fas fa-user-circle user-icons"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Page's Main Section Structure-->
+    <main>
+        <div class="body-page row m-0 d-flex">
+            <!--User Account Information-->
+            <div class="user-information">
+                <div class="user-profile">
+                    <div class="profile-info d-flex flex-row">
+                        <img class="img-fluid user-photo" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="men">
+                        <div class="user-info-wrapper d-flex flex-column pl-1 justify-content-center">
+                            <div class="account-info d-flex flex-column justify-content-center">
+                                <h5 class="mb-1">
+                                    Vlad Ermakov
+                                    <i class="fas fa-cog custom-setting"></i>
+                                </h5>
+                                <span class="mb-3 span-info">Status:&nbsp;<span class="inner-span-info">Without premium</span>
+                                </span>
+                            </div>
+                            <hr id="info-line">
+                            <div class="mt-2">
+                                <i class="fas fa-heart mr-1"></i>
+                                257
+                                <span class="premium-button ml-1 pr-2">
+                                    <i class="far fa-check-circle ml-1"></i>
+                                    Get Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul id="menu-account" class="d-flex flex-column justify-content-between">
+                    <li>
+                        <i class="fas fa-users user-icons"></i>
+                        <span class="list-account">Start Meeting</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-centos user-icons"></i>
+                        <span class="list-account">People Nearby</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-video user-icons"></i>
+                        <span class="list-account">Channel and Streming</span>
+                    </li>
+                    <li>
+                        <i class="far fa-comments user-icons"></i>
+                        <span class="list-account">Messages</span>
+                    </li>
+                    <li>
+                        <i class="far fa-star user-icons"></i>
+                        <span class="list-account">Featured People</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-gift user-icons"></i>
+                        <span class="list-account">Gifts</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line user-icons"></i>
+                        <span class="list-account">Raiting of Popularity</span>
+                    </li>
+                    <li>
+                        <i class="far fa-list-alt user-icons"></i>
+                        <span class="list-account">Dialy Tasks</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Detail Page of Contact-->
+            
+            <div class="foto-section pl-0 d-flex flex-column">
+                <div class="mini-photos d-flex flex-row justify-content-center align-items-start">
+                    <div id="galerie" class="d-flex flex-row justify-content-between align-items-center">
+                        <div class="current-profile-photo d-flex">
+                            <img class="profile-photo img-fluid" src="https://img.culturacolectiva.com/content/2017/12/21/1513881084568/buena-ortografia-medium.jpg" alt="women-studing">
+                            <div class="circle d-flex justify-content-center align-items-center">X</div>
+                        </div>
+                        <div class="elipsis-i d-flex justify-content-center align-items-center">
+                                <i class="fas fa-ellipsis-v elipsis-i"></i>
+                        </div>
+                    
+                        <img class="photos img-fluid" src="https://img.culturacolectiva.com/content/2017/12/21/1513881084568/buena-ortografia-medium.jpg" alt="women-studing">
+                        
+                        <img class="photos img-fluid" src="https://img.culturacolectiva.com/content/2017/12/21/1513881084568/buena-ortografia-medium.jpg" alt="women-studing">
+                        
+                        <img class="photos img-fluid" src="https://img.culturacolectiva.com/content/2017/12/21/1513881084568/buena-ortografia-medium.jpg" alt="women-studing">
+                        
+                        <img class="photos img-fluid" src="https://img.culturacolectiva.com/content/2017/12/21/1513881084568/buena-ortografia-medium.jpg" alt="women-studing">
+                        
+                        <img class="photos img-fluid" src="https://img.culturacolectiva.com/content/2017/12/21/1513881084568/buena-ortografia-medium.jpg" alt="women-studing">
+                        
+                        <img class="photos img-fluid mr-0" src="https://img.culturacolectiva.com/content/2017/12/21/1513881084568/buena-ortografia-medium.jpg" alt="women-studing">
+
+                    </div>
+                </div>
+                <div class="contact-photo">
+                    <div class="distance d-flex align-items-center justify-content-center">
+                        <i class="fas fa-location-arrow"></i>
+                        <span class="distance-span">&nbsp; &nbsp; 1 km</span>
+                    </div>
+                    <div class="link-photo d-flex flex-column justify-content-between">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square orange"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="contact-buttons d-flex justify-content-around align-items-center">
+                        <button id="previous-button" type="submit">
+                            <i class="fas fa-chevron-left" id="prev"></i>
+                        </button>
+                        <div class="social-buttons d-flex justify-content-between">
+                            <button id="like-button" type="submit">
+                                <i class="fas fa-heart mr-1" id="heart"></i>
+                            </button>
+                            <button id="dislike-button" type="submit">
+                                <i class="fas fa-times" id="no-heart"></i>
+                            </button>
+                        </div>
+                        <button id="next-button" type="submit">
+                            <i class="fas fa-chevron-right" id="next"></i>
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+            <!--Contact Information-->
+            <div class="acquittances-info mb-0 p-0 d-flex flex-column">
+                <div class="upgrade-account up-acc-media-query d-flex flex-column align-items-center justify-content-center">
+                    <div class="become-popular d-flex align-self-center">
+                        <i class="fas fa-crown"></i>
+                        <h5>Become the popular</h5>
+                    </div>
+                    <span class="become-header text-align-left">Start receiving twice as many messages, likes and other things</span>
+                    <a class="purchase-anchor" href="#">Purchase package</a>
+                </div>
+
+            
+
+                <div class="new-container d-flex flex-column justify-content-between">
+
+                <div class="d-flex upgrade-account filter align-items-center justify-content-between">
+                    <h6 class="m-0">Filter search</h6>
+                    <i class="fas fa-stream"></i>
+                </div>
+                <div class="upgrade-account personal-information-contact d-flex flex-column justify-content-between align-items-center">
+                    <div class="contact-info name-contact d-flex flex-column justify-content-around">
+                        <span class="become-span"> Name Surnname, Old</span>
+                           <div class="contact-ns d-flex justify-content-between align-items-center"> 
+                                <h5 class="m-0">Karina Simons, 23</h5>
+                                <div class="green-circle"></div>
+                            </div>
+                    </div>
+                    <div class="contact-info personal-info-contact d-flex flex-column align-items-start justify-content-between">
+                        <div class="margins w-100 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="become-span"> Location</span>
+                                <h6 class="m-0 become-header">Poland, Warzawa</h6>
+                            </div>
+                            <div id="background-purple" class="d-flex justify-content-center align-items-center">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                        </div>
+                        <div class="margins">
+                            <span class="become-span">Interests</span>
+                            <h6 class="m-0 become-header">Cinema, dinner with friends, shoes, makeup, shopping, walks on the beach.</h6>
+                        </div>
+                        <div class="margins">
+                            <span class="become-span">Languages</span>
+                            <h6 class="m-0 become-header">English (conversational), Polish (native).</h6>
+                        </div>
+                        <button type="submit" class="view-page d-flex align-self-center justify-self-center justify-content-center">View page of Karin</button>
+                    </div>
+                    <div class="contact-info contact-user d-flex justify-content-around align-items-center border-0">
+                        <i class="fas fa-comments communicate"></i>
+                        <div class="text-comm">
+                            <h6 class="m-0">Communicate;</h6>
+                            <span class="become-span span-communicate">Click and you can inmmediately communicate.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
