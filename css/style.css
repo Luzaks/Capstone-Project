@@ -7,7 +7,7 @@
 html,
 body {
   background-color: #eff0f2;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Helvetica Neue', sans-serif;
   font-size: 14px;
   width: 100vw;
   height: 100vh;
@@ -40,6 +40,7 @@ body {
 #location-icon {
   display: flex;
   align-items: center;
+  font-size: 0.85rem;
   margin-left: 2.7rem;
 }
 
@@ -50,9 +51,9 @@ body {
   background-color: #eff0f2;
   border-radius: 5px;
   color: #c2c8ce;
-  font-size: 1.2rem;
-  height: 2rem;
-  width: 2rem;
+  font-size: 0.8rem;
+  height: 1.6rem;
+  width: 1.6rem;
 }
 
 #location {
@@ -64,16 +65,20 @@ body {
   text-decoration-color: #c2c8ce;
 }
 
+h1#title {
+  font-size: 2.3rem;
+  letter-spacing: -0.1rem;
+}
+
 .first-style {
+  font-weight: 900;
   color: #4e50b8;
   display: inline-block;
-  font-size: 1.5rem;
 }
 
 .second-style {
   color: #f0916e;
   display: inline-block;
-  font-size: 1.5rem;
 }
 
 .nav-icons {
@@ -127,7 +132,10 @@ main {
 
 .profile-info {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 15%;
 }
 
 .foto-section {
@@ -137,17 +145,19 @@ main {
 
 .user-photo {
   max-width: 100%;
-  width: 35%;
+  width: 20%;
   height: auto;
   border-radius: 5px;
+  margin-right: 5%;
 }
 
 .user-info-wrapper {
   display: flex;
-  flex-direction: column;
-  padding-left: 1.5%;
-  justify-content: center;
-  width: 65%;
+  flex-direction: row;
+  padding: 4%;
+  justify-content: flex-start;
+  width: 100%;
+  height: 75%;
   min-width: 174px;
 }
 
@@ -155,23 +165,30 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   height: 50%;
+}
+
+.account-info > h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .custom-setting {
   color: #c2c8ce;
   font-size: 1.2rem;
-  margin-right: 2rem;
 }
 
 .span-info {
-  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #c2c8ce;
 }
 
 .inner-span-info {
   color: #4e50b8;
+  text-decoration: underline;
+  text-decoration-color: #c2c8ce;
 }
 
 #info-line {
@@ -180,17 +197,28 @@ main {
   margin: 0;
 }
 
-.fa-heart {
-  color: red;
-  font-size: 1rem;
+#get-premium {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4% 4%;
+  width: 100%;
+}
+
+#get-premium > i.fa-heart {
+  color: #f0916e;
+  font-size: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 2%;
 }
 
 .premium-button {
   background-color: #4e50b8;
   border-radius: 5px;
   color: #fff;
-  font-family: 'Lato', sans-serif;
-  padding: 2px;
+  padding: 2% 10%;
+  margin-left: 9%;
 }
 
 .acquittances-info {
@@ -209,7 +237,6 @@ ul#menu-account {
 
 .list-account {
   color: #c2c8ce;
-  font-family: 'Lato', sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
   margin-left: 2.5%;
@@ -371,20 +398,17 @@ div#galerie > .photos {
 
 .become-span {
   color: #c2c8ce;
-  font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
 
 .become-header {
   color: #414464;
-  font-family: 'Lato', sans-serif;
   font-weight: 500;
 }
 
 .purchase-anchor {
   background-color: #4e50b8;
   border-radius: 5px;
-  font-family: 'Lato', sans-serif;
   font-weight: 600;
   padding: 1% 4%;
   width: 80%;
@@ -443,7 +467,6 @@ div#galerie > .photos {
   background-color: #eff0f2;
   border-radius: 5px;
   color: #c2c8ce;
-  font-family: 'Lato', sans-serif;
   font-size: 0.9rem;
   border: none;
   outline: none;
