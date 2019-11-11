@@ -24,6 +24,9 @@ body {
 }
 
 #navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 5px 5px 1px 1px;
   height: 60px;
   width: 100%;
@@ -39,6 +42,9 @@ body {
 }
 
 .fa-map-marker-alt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #eff0f2;
   border-radius: 5px;
   color: #c2c8ce;
@@ -68,9 +74,15 @@ body {
   font-size: 1.5rem;
 }
 
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
 ul.nav-icons {
   list-style: none;
   margin-right: 2.7rem;
+  margin-bottom: 0;
 }
 
 ul.nav-icons > li {
