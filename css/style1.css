@@ -86,6 +86,10 @@ h1#title {
   align-items: center;
 }
 
+#location-icon:hover {
+  cursor: pointer;
+}
+
 ul.nav-icons {
   list-style: none;
   margin-right: 2.7rem;
@@ -104,6 +108,10 @@ ul.nav-icons > li {
   height: 1.3rem;
   font-size: 1.3rem;
   width: 1.3rem;
+}
+
+.user-icons:hover {
+  cursor: pointer;
 }
 
 /* Page's Main Section Style */
@@ -190,12 +198,6 @@ main {
   color: #4e50b8;
   text-decoration: underline;
   text-decoration-color: #c2c8ce;
-}
-
-#info-line {
-  border-bottom: 1px #eff0f2 solid;
-  border-width: 100%;
-  margin: 0;
 }
 
 #get-premium {
@@ -389,6 +391,9 @@ ul#menu-account > li > i {
 
 .chat-menu,
 .small-chat-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 33.33%;
   height: 100%;
 }
@@ -446,10 +451,18 @@ a.anchor-bubble-chat > .chat-elipsis > .status-container > h5 {
 }
 
 #chat-detail {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 66%;
   height: 100%;
   overflow: hidden;
-  display: inline-block;
+}
+
+#chat-detail > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .chat-img {
@@ -459,6 +472,9 @@ a.anchor-bubble-chat > .chat-elipsis > .status-container > h5 {
 }
 
 .status-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 90%;
 }
 

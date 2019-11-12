@@ -86,6 +86,10 @@ h1#title {
   align-items: center;
 }
 
+#location-icon:hover {
+  cursor: pointer;
+}
+
 ul.nav-icons {
   list-style: none;
   margin-right: 2.7rem;
@@ -104,6 +108,10 @@ ul.nav-icons > li {
   height: 1.3rem;
   font-size: 1.3rem;
   width: 1.3rem;
+}
+
+.user-icons:hover {
+  cursor: pointer;
 }
 
 /* Page's Main Section Style */
@@ -139,8 +147,22 @@ main {
 }
 
 .foto-section {
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
   margin-top: 2.5%;
+}
+
+.mini-photos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#galerie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .user-photo {
@@ -202,12 +224,6 @@ main {
   text-decoration-color: #c2c8ce;
 }
 
-#info-line {
-  border-bottom: 1px #eff0f2 solid;
-  border-width: 100%;
-  margin: 0;
-}
-
 #get-premium {
   display: flex;
   justify-content: center;
@@ -243,6 +259,8 @@ a.anchor-get-premium:hover {
 }
 
 .acquittances-info {
+  display: flex;
+  flex-direction: column;
   margin: 2.5% 0;
 }
 
@@ -307,6 +325,7 @@ ul#menu-account > li > a.anchor-menu-links {
 /* Detail Page of Contact Style */
 
 .current-profile-photo {
+  display: flex;
   position: relative;
   width: 11%;
 }
@@ -337,6 +356,9 @@ div#galerie > .photos {
 }
 
 .elipsis-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #c2c8ce;
   font-size: 1.5rem;
   height: auto;
@@ -354,6 +376,9 @@ div#galerie > .photos {
 }
 
 .distance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 2%;
   left: 2%;
@@ -369,6 +394,9 @@ div#galerie > .photos {
 }
 
 .link-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   width: 0.5vw;
   height: 6vh;
@@ -387,6 +415,9 @@ div#galerie > .photos {
 }
 
 .contact-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: absolute;
   bottom: 7%;
   width: 100%;
@@ -394,6 +425,8 @@ div#galerie > .photos {
 }
 
 .social-buttons {
+  display: flex;
+  justify-content: space-between;
   width: 10vw;
   height: 8vh;
 }
@@ -598,7 +631,16 @@ a.purchase-anchor:hover {
   height: 75%;
 }
 
+.w-100 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #background-purple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #4e50b8;
   border-radius: 5px;
   height: 2.4rem;
@@ -618,6 +660,10 @@ a.purchase-anchor:hover {
 }
 
 .view-page {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
   background-color: #eff0f2;
   border-radius: 5px;
   color: #c2c8ce;
@@ -815,6 +861,10 @@ a.anchor-communicate:hover {
 
   .contact-photo {
     height: 85%;
+  }
+
+  .fa-arrow-left {
+    display: none;
   }
 
   .new-container {
