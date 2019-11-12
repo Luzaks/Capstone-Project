@@ -287,6 +287,21 @@ ul#menu-account > li > a.anchor-menu-links {
   width: 100%;
 }
 
+.chat-menu > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c2c8ce;
+  font-size: 1vw;
+  width: 1.3vw;
+  height: 1.3vw;
+}
+
+.chat-menu > i:hover {
+  color: #4e50b8;
+  cursor: pointer;
+}
+
 ul#menu-account > li > i {
   color: #c2c8ce;
 }
@@ -376,6 +391,18 @@ ul#menu-account > li > i {
 .small-chat-menu {
   width: 33.33%;
   height: 100%;
+}
+
+.chat-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-menu:hover {
+  background-color: #eff0f2;
+  color: #4e50b8;
+  border-top: 2px #4e50b8 solid;
 }
 
 .menu-item-2 {
