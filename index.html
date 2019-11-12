@@ -54,55 +54,95 @@
                         <div class="user-info-wrapper">
                                 <img class="user-photo" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="men">
                             <div class="account-info">
-                                <h2>
-                                    Vlad Ermakov
-                                </h2>
-                                <span class="span-info">Status:&nbsp;&nbsp;&nbsp;<span class="inner-span-info">Without premium</span>
+                                <div class="inline-span-icon">
+                                    <h2>
+                                        Vlad Ermakov
+                                    </h2>
+                                    <span class="span-info">Status:&nbsp;&nbsp;&nbsp;<span class="inner-span-info">Without premium</span>
+                                    </span>
+                                </div>
                                 <i class="fas fa-cog custom-setting"></i>
-                                </span>
                             </div>
                         </div>
                         <div id="get-premium">
                             <i class="fas fa-heart"></i>
-                            257
+                            257                            
                             <span class="premium-button">
-                                <i class="far fa-check-circle"></i>
-                                Get Premium</span>
-                        </div>
+                                <a href="#" class="anchor-get-premium">
+                                    <i class="far fa-check-circle"></i>
+                                    Get Premium
+                                </a>
+                                </span>
+                            </div>
                     </div>
                 </div>
                 <ul id="menu-account">
                     <li>
-                        <i class="fas fa-users user-icons"></i>
-                        <span class="list-account">Start Meeting</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-users user-icons"></i>
+                                <span class="list-account">Start Meeting</span>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <i class="fab fa-centos user-icons"></i>
-                        <span class="list-account">People Nearby</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fab fa-centos user-icons"></i>
+                                <span class="list-account">People Nearby</span>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <i class="fas fa-video user-icons"></i>
-                        <span class="list-account">Channel and Streming</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-video user-icons"></i>
+                                <span class="list-account">Channel and Streming</span>
+                            </div>
+                            <div class="notifications">12</div>
+                        </a>
                     </li>
                     <li>
-                        <i class="far fa-comments user-icons"></i>
-                        <span class="list-account">Messages</span>
+                        <a href="chat-page.html" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="far fa-comments user-icons"></i>
+                                <span class="list-account">Messages</span>
+                            </div>
+                            <div class="new-notifications">12</div>
+                        </a>
                     </li>
                     <li>
-                        <i class="far fa-star user-icons"></i>
-                        <span class="list-account">Featured People</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="far fa-star user-icons"></i>
+                                <span class="list-account">Featured People</span>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <i class="fas fa-gift user-icons"></i>
-                        <span class="list-account">Gifts</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-gift user-icons"></i>
+                                <span class="list-account">Gifts</span>
+                            </div>
+                            <div class="new-notifications">12</div>
+                        </a>
                     </li>
                     <li>
-                        <i class="fas fa-chart-line user-icons"></i>
-                        <span class="list-account">Raiting of Popularity</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-chart-line user-icons"></i>
+                                <span class="list-account">Raiting of Popularity</span>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <i class="far fa-list-alt user-icons"></i>
-                        <span class="list-account">Dialy Tasks</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="far fa-list-alt user-icons"></i>
+                                <span class="list-account">Dialy Tasks</span>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -114,7 +154,7 @@
                     <div id="galerie" class="d-flex flex-row justify-content-between align-items-center">
                         <div class="current-profile-photo d-flex">
                             <img class="profile-photo img-fluid" src="https://img.culturacolectiva.com/content/2017/12/21/1513881084568/buena-ortografia-medium.jpg" alt="women-studing">
-                            <div class="circle d-flex justify-content-center align-items-center">X</div>
+                            <div class="circle">X</div>
                         </div>
                         <div class="elipsis-i d-flex justify-content-center align-items-center">
                                 <i class="fas fa-ellipsis-v elipsis-i"></i>
@@ -151,7 +191,7 @@
                         </button>
                         <div class="social-buttons d-flex justify-content-between">
                             <button id="like-button" type="submit">
-                                <i class="fas fa-heart mr-1" id="heart"></i>
+                                <i class="fas fa-heart" id="heart"></i>
                             </button>
                             <button id="dislike-button" type="submit">
                                 <i class="fas fa-times" id="no-heart"></i>
@@ -165,55 +205,57 @@
             </div>
             <!--Contact Information-->
             <div class="acquittances-info mb-0 p-0 d-flex flex-column">
-                <div class="upgrade-account up-acc-media-query d-flex flex-column align-items-center justify-content-center">
-                    <div class="become-popular d-flex align-self-center">
+                <div class="upgrade-account up-acc-media-query">
+                    <div class="become-popular">
                         <i class="fas fa-crown"></i>
-                        <h5>Become the popular</h5>
+                        <div class="header-become">
+                            <h2>Become the popular</h2>
+                            <p class="become-header text-align-left">Start receiving twice as many messages, likes and other things</p>
+                        </div>
                     </div>
-                    <span class="become-header text-align-left">Start receiving twice as many messages, likes and other things</span>
                     <a class="purchase-anchor" href="#">Purchase package</a>
                 </div>
 
             
 
-                <div class="new-container d-flex flex-column justify-content-between">
+                <div class="new-container">
 
-                <div class="d-flex upgrade-account filter align-items-center justify-content-between">
-                    <h6 class="m-0">Filter search</h6>
+                <div class="upgrade-account filter">
+                    <h2 class="m-0">Filter search</h2>
                     <i class="fas fa-stream"></i>
                 </div>
-                <div class="upgrade-account personal-information-contact d-flex flex-column justify-content-between align-items-center">
-                    <div class="contact-info name-contact d-flex flex-column justify-content-around">
+                <div class="upgrade-account personal-information-contact">
+                    <div class="contact-info name-contact">
                         <span class="become-span"> Name Surnname, Old</span>
-                           <div class="contact-ns d-flex justify-content-between align-items-center"> 
-                                <h5 class="m-0">Karina Simons, 23</h5>
+                           <div class="contact-ns"> 
+                                <h3 class="m-0">Esmeralda Muñoz, 23</h3>
                                 <div class="green-circle"></div>
                             </div>
                     </div>
-                    <div class="contact-info personal-info-contact d-flex flex-column align-items-start justify-content-between">
+                    <div class="contact-info personal-info-contact">
                         <div class="margins w-100 d-flex justify-content-between align-items-center">
                             <div>
                                 <span class="become-span"> Location</span>
-                                <h6 class="m-0 become-header">Poland, Warzawa</h6>
+                                <h4 class="m-0 become-header-2">USA, Chicago</h4>
                             </div>
                             <div id="background-purple" class="d-flex justify-content-center align-items-center">
                                 <i class="fas fa-map-marked-alt"></i>
                             </div>
                         </div>
-                        <div class="margins">
-                            <span class="become-span">Interests</span>
-                            <h6 class="m-0 become-header">Cinema, dinner with friends, shoes, makeup, shopping, walks on the beach.</h6>
+                        <div class="margins studies-interest">
+                            <span class="become-span">Studies & Interests</span>
+                            <h4 class="m-0 become-header-2">Cinema, art, photography.</h4>
                         </div>
-                        <div class="margins">
+                        <div class="margins languages">
                             <span class="become-span">Languages</span>
-                            <h6 class="m-0 become-header">English (conversational), Polish (native).</h6>
+                            <h4 class="m-0 become-header-2">English (conversational), Spanish (native).</h4>
                         </div>
                         <button type="submit" class="view-page d-flex align-self-center justify-self-center justify-content-center">View page of Karin</button>
                     </div>
-                    <div class="contact-info contact-user d-flex justify-content-around align-items-center border-0">
-                        <i class="fas fa-comments communicate"></i>
+                    <div class="contact-info contact-user">
+                        <a class="anchor-communicate" href="chat-detail-page.html"><i class="fas fa-comments communicate"></i></a>
                         <div class="text-comm">
-                            <h6 class="m-0">Communicate;</h6>
+                            <h4 class="m-0">Communicate with her</h4>
                             <span class="become-span span-communicate">Click and you can inmmediately communicate.</span>
                         </div>
                     </div>

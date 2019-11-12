@@ -53,12 +53,14 @@
                         <div class="user-info-wrapper">
                                 <img class="user-photo" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="men">
                             <div class="account-info">
-                                <h2>
-                                    Vlad Ermakov
-                                </h2>
-                                <span class="span-info">Status:&nbsp;&nbsp;&nbsp;<span class="inner-span-info">Without premium</span>
+                                <div class="inline-span-icon">
+                                    <h2>
+                                        Vlad Ermakov
+                                    </h2>
+                                    <span class="span-info">Status:&nbsp;&nbsp;&nbsp;<span class="inner-span-info">Without premium</span>
+                                    </span>
+                                </div>
                                 <i class="fas fa-cog custom-setting"></i>
-                                </span>
                             </div>
                         </div>
                         <div id="get-premium">
@@ -70,190 +72,246 @@
                         </div>
                     </div>
                 </div>
-                <ul id="menu-account" class="d-flex flex-column justify-content-between">
+                <ul id="menu-account">
                     <li>
-                        <i class="fas fa-users user-icons"></i>
-                        <span class="list-account">Start Meeting</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-users user-icons"></i>
+                                <span class="list-account">Start Meeting</span>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <i class="fab fa-centos user-icons"></i>
-                        <span class="list-account">People Nearby</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fab fa-centos user-icons"></i>
+                                <span class="list-account">People Nearby</span>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <i class="fas fa-video user-icons"></i>
-                        <span class="list-account">Channel and Streming</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-video user-icons"></i>
+                                <span class="list-account">Channel and Streming</span>
+                            </div>
+                            <div class="notifications">12</div>
+                        </a>
                     </li>
                     <li>
-                        <i class="far fa-comments user-icons"></i>
-                        <span class="list-account">Messages</span>
+                        <a href="chat-page.html" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="far fa-comments user-icons"></i>
+                                <span class="list-account">Messages</span>
+                            </div>
+                            <div class="new-notifications">12</div>
+                        </a>
                     </li>
                     <li>
-                        <i class="far fa-star user-icons"></i>
-                        <span class="list-account">Featured People</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="far fa-star user-icons"></i>
+                                <span class="list-account">Featured People</span>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <i class="fas fa-gift user-icons"></i>
-                        <span class="list-account">Gifts</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-gift user-icons"></i>
+                                <span class="list-account">Gifts</span>
+                            </div>
+                            <div class="new-notifications">12</div>
+                        </a>
                     </li>
                     <li>
-                        <i class="fas fa-chart-line user-icons"></i>
-                        <span class="list-account">Raiting of Popularity</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-chart-line user-icons"></i>
+                                <span class="list-account">Raiting of Popularity</span>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <i class="far fa-list-alt user-icons"></i>
-                        <span class="list-account">Dialy Tasks</span>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="far fa-list-alt user-icons"></i>
+                                <span class="list-account">Dialy Tasks</span>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
             <!--Chat page with list of chats-->
             <div class="chat-container d-flex">
                 <div id="list-chat">
-                    <div class="header-chat d-flex justify-content-around align-items-center">
-                        <div class="d-flex justify-content-center align-items-center">    
+                    <div class="header-chat">
+                        <div class="search-by-users">    
                             <i class="fas fa-search"></i>
-                            <span>&nbsp;Search by users</span>
+                            <h2>&nbsp;&nbsp;&nbsp;Search by users</h2>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <i class="fas fa-edit"></i>
-                        </div>
+                        <i class="fas fa-edit"></i>
                     </div>
                     <div id="scroll-list-chat"> 
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                                <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
-                                    <span class="green-circle"></span>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check checked"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text">
-                                    <i class="fas fa-check checked"></i>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                                <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
-                                    <span class="green-circle"></span>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text">
-                                    <i class="fas fa-check"></i>
-                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                                <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
-                                    <span class="green-circle"></span>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check checked"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text">
-                                    <i class="fas fa-check checked"></i>
-                                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                                <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text">
-                                    <i class="fas fa-check"></i>
-                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                                <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text">
-                                    <i class="fas fa-check"></i>
-                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                                <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
-                                    <span class="green-circle"></span>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check checked"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text">
-                                    <i class="fas fa-check checked"></i>
-                                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, 
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                                <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text">
-                                    <i class="fas fa-check"></i>
-                                    Es, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                                <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text"> 
-                                    <i class="fas fa-check"></i>
-                                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero 
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                               <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check checked"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text">
-                                    <i class="fas fa-check checked"></i>
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a 
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                                <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text">
-                                    <i class="fas fa-check"></i>
-                                    Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'l
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
-                        <div class="bubble-chat d-flex align-items-center justify-content-around">
-                            <img class="chat-img" src="https://i0.wp.com/wp.stolaf.edu/wp-content/uploads/2019/07/nickg.png?resize=1200%2C900&ssl=1" alt="">
-                            <div class="chat-elipsis d-flex flex-column align-items-start justify-content-center">
-                                <div class="status-container d-flex justify-content-start align-items-center">    
-                                    <h5 class="m-0">Esmeralda Muñoz</h5>
-                                    <span class="green-circle"></span>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container d-flex justify-content-start align-items-center">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check checked"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
                                 </div>
-                                <span class="buble-chat-text">
-                                    <i class="fas fa-check checked"></i>
-                                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                                </span>                            
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="footer-chat-list d-flex">
@@ -285,10 +343,10 @@
                 </div>
                 <!--Chat Detil Page-->
                 <div id="chat-detail" class="d-flex flex-column align-items-center">
-                    <div class="header-chat chat-detail-pag d-flex justify-content-around align-items-center">
+                    <div class="header-chat chat-detail-pag">
                         <i class="fas fa-phone-alt"></i>
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <h6 class="m-0">Esmeralda Muñoz</h6>
+                        <div class="contact-chat-title">
+                            <h2 class="m-0">Esmeralda Muñoz</h2>
                             <span class="online-text">online</span>
                         </div>
                         <i class="fas fa-ellipsis-h"></i>

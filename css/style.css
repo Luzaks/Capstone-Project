@@ -163,24 +163,35 @@ main {
 
 .account-info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 50%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60%;
+  width: 80%;
 }
 
-.account-info > h2 {
-  font-size: 1.5rem;
+.inline-span-icon > h2 {
+  font-size: 1.3vw;
   font-weight: 600;
 }
 
 .custom-setting {
   color: #c2c8ce;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
+  display: flex;
+  justify-self: center;
+}
+
+.inline-span-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 85%;
 }
 
 .span-info {
-  font-size: 0.9rem;
+  font-size: 1.7vh;
   font-weight: 700;
   color: #c2c8ce;
 }
@@ -221,8 +232,28 @@ main {
   margin-left: 9%;
 }
 
+a.anchor-get-premium {
+  text-decoration: none;
+  color: white;
+}
+
+a.anchor-get-premium:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .acquittances-info {
   margin: 2.5% 0;
+}
+
+a.anchor-menu-list:active {
+  text-decoration: none;
+  cursor: grabbing;
+}
+
+a.anchor-menu-links:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 ul#menu-account {
@@ -235,11 +266,42 @@ ul#menu-account {
   padding-left: 2.5%;
 }
 
+ul#menu-account > li,
+ul#menu-account > li > a.anchor-menu-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-links {
+  width: 90%;
+}
+
 .list-account {
   color: #c2c8ce;
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1vw;
+  font-weight: 500;
   margin-left: 2.5%;
+}
+
+.notifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: #c2c8ce;
+  background-color: #e1e4e7;
+  padding: 1.5% 4%;
+}
+
+.new-notifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #f0916e;
+  padding: 1.5% 4%;
 }
 
 /* Detail Page of Contact Style */
@@ -255,10 +317,14 @@ ul#menu-account {
 
 .circle {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100%;
   background-color: #f0916e;
   color: white;
   font-size: 1rem;
+  font-weight: 900;
   width: 33.333%;
   height: 33.333%;
   top: 33.333%;
@@ -322,7 +388,7 @@ div#galerie > .photos {
 
 .contact-buttons {
   position: absolute;
-  bottom: 2%;
+  bottom: 7%;
   width: 100%;
   height: 7vh;
 }
@@ -334,8 +400,11 @@ div#galerie > .photos {
 
 #previous-button,
 #next-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  width: 3vw;
+  width: 6vh;
   height: 6vh;
   outline: none;
   border: none;
@@ -347,12 +416,18 @@ div#galerie > .photos {
 #next {
   font-size: 1.4rem;
   color: #787878;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 #like-button,
 #dislike-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
   width: 4vw;
+  height: 4vw;
   outline: none;
   border: none;
 }
@@ -361,18 +436,16 @@ div#galerie > .photos {
   background-color: #4e50b8;
 }
 
-#heart {
-  color: #fff;
-  font-size: 1.4rem;
-}
-
 #dislike-button {
   background-color: #f0916e;
 }
 
+#heart,
 #no-heart {
   color: #fff;
   font-size: 1.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 /* Contact Information Style */
@@ -380,40 +453,96 @@ div#galerie > .photos {
 .upgrade-account {
   border-radius: 5px;
   background-color: #fff;
-  padding: 2%;
+  padding: 4%;
   width: 100%;
   margin-bottom: 2.5%;
 }
 
+.up-acc-media-query {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  padding: 4%;
+}
+
 .become-popular {
+  display: flex;
+  align-self: center;
   width: 100%;
 }
 
 .become-popular > i,
 .fa-crown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #f0916e;
-  font-size: 1.6rem;
-  margin-right: 1.6rem;
+  font-size: 4rem;
+  width: 30%;
+  height: 100%;
+  margin-right: 4%;
+}
+
+.header-become > h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1vw;
+  font-weight: 600;
 }
 
 .become-span {
   color: #c2c8ce;
+  font-size: 1.7vh;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
-.become-header {
-  color: #414464;
+p.become-header {
+  color: #c2c8ce;
+  font-weight: 700;
+  font-size: 1.7vh;
+  line-height: 1.2rem;
+}
+
+.become-header-2 {
+  color: #000;
   font-weight: 500;
+  font-size: 1.1vw;
+  line-height: 1.5rem;
 }
 
 .purchase-anchor {
   background-color: #4e50b8;
   border-radius: 5px;
   font-weight: 600;
-  padding: 1% 4%;
-  width: 80%;
+  padding: 3% 4%;
+  width: 100%;
   text-align: center;
   color: #fff;
+}
+
+a.purchase-anchor:hover {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.new-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter > h2 {
+  font-size: 1.1vw;
+  font-weight: 700;
 }
 
 .fa-stream {
@@ -423,22 +552,34 @@ div#galerie > .photos {
   height: auto;
 }
 
+.personal-information-contact {
+  height: 91.5%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .contact-info {
-  border-bottom: 1px #eff0f2 solid;
-  padding: 3.2% 1%;
   width: 100%;
 }
 
 .contact-info > span {
   display: block;
-  margin-bottom: 1%;
+  margin-bottom: 0;
 }
 
 .contact-ns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
-.contact-info > h5 {
+.contact-ns > h3 {
+  font-weight: 700;
+  font-size: 1.15vw;
   display: inline;
 }
 
@@ -447,6 +588,14 @@ div#galerie > .photos {
   background-color: green;
   height: 1vh;
   width: 2%;
+}
+
+.personal-info-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
 }
 
 #background-purple {
@@ -463,6 +612,11 @@ div#galerie > .photos {
   height: 1.3rem;
 }
 
+.studies-interest,
+.languages {
+  width: 100%;
+}
+
 .view-page {
   background-color: #eff0f2;
   border-radius: 5px;
@@ -470,9 +624,10 @@ div#galerie > .photos {
   font-size: 0.9rem;
   border: none;
   outline: none;
-  padding: 2% 5%;
-  width: 75%;
   margin-bottom: 2%;
+  padding: 3% 4%;
+  width: 100%;
+  text-align: center;
 }
 
 .margins {
@@ -480,21 +635,55 @@ div#galerie > .photos {
 }
 
 .contact-user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px #eff0f2 solid;
   height: 16%;
+  padding-top: 4%;
 }
 
+a.anchor-communicate,
 .communicate {
-  color: #f0916e;
-  font-size: 3rem;
-  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4e50b8;
+  font-size: 2.5vw;
+  width: 30%;
   height: 100%;
 }
 
+a.anchor-communicate:active {
+  text-decoration: none;
+  cursor: grabbing;
+}
+
+a.anchor-communicate:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .text-comm {
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.text-comm > h4 {
+  font-size: 0.9vw;
+}
+
+.span-communicate {
+  font-size: 0.8vw;
 }
 
 @media screen and (max-width: 1024px) {
+  main,
+  .body-page {
+    height: 100%;
+  }
+
   #navigation-bar {
     display: none !important;
   }
@@ -530,44 +719,71 @@ div#galerie > .photos {
     width: 100%;
   }
 
-  .personal-information-contact {
-    width: 100%;
-    height: 100%;
-  }
-
   .contact-buttons {
     bottom: -10%;
     height: 10vh;
   }
 
   .social-buttons {
-    width: 10rem;
-    height: 4rem;
+    width: 17vh;
+    height: 7vh;
   }
 
   #like-button,
   #dislike-button {
-    width: 4rem;
+    width: 7vh;
+    height: 7vh;
   }
 
   #heart,
   #no-heart {
-    font-size: 2.8rem;
-    width: 2.8rem;
-    height: 2.8rem;
-  }
-
-  #previous-button,
-  #next-button {
-    width: 3rem;
-    height: 3rem;
+    font-size: 4vh;
+    width: 4vh;
+    height: 4vh;
   }
 
   #prev,
   #next {
-    font-size: 2.6rem;
-    width: 2.6rem;
-    height: 2.6rem;
+    font-size: 3.8vh;
+    width: 3.8vh;
+    height: 3.8vh;
+  }
+
+  .new-container {
+    height: 100%;
+  }
+
+  .personal-information-contact {
+    padding-top: 5%;
+    height: 100%;
+  }
+
+  .contact-ns > h3 {
+    font-size: 2vh;
+  }
+
+  .become-header-2 {
+    font-size: 1.8vh;
+  }
+
+  .contact-user {
+    padding-top: 0;
+  }
+
+  .communicate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 3vh;
+  }
+
+  .text-comm > h4 {
+    font-size: 1.6vh;
+  }
+
+  .span-communicate {
+    font-size: 1.5vh;
   }
 }
 
@@ -592,11 +808,12 @@ div#galerie > .photos {
   }
 
   .name-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 17%;
-  }
-
-  .personal-info-contact {
-    height: 60%;
+    border-bottom: 1px #eff0f2 solid;
+    margin-bottom: 1%;
   }
 
   .acquittances-info,
@@ -605,9 +822,5 @@ div#galerie > .photos {
     height: calc(100% - 60px);
     margin-right: 1%;
     margin-left: 1%;
-  }
-
-  .personal-information-contact {
-    height: 90%;
   }
 }
