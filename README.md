@@ -4,6 +4,7 @@
 
 ### Description:
 This project consist in personalize a social network based in Swipex, a social media to find acquittances, https://www.behance.net/gallery/70285515/Swipex-This-application-for-dating.
+
 You can find the video description here: https://www.loom.com/share/6ff4a957b4634c8a9ba2b976f378a694.
 
 ### Getting Started:
