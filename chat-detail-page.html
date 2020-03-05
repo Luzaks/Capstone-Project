@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1eb37ec03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Chat Detail Page</title>
+</head>
+<body>
+    <header>
+        <!--Navigation Bar Structure-->
+        <nav id="navigation-bar">
+            <span class="nav-icons" id="location-icon">   
+                    <i class="fas fa-map-marker-alt"></i>&nbsp;
+                <span id="location">Location:</span>&nbsp;&nbsp;&nbsp;
+                <span id="location-city">London
+                    <i class="fas fa-angle-double-down"></i>
+                </span>
+            </span>
+            <div class="nav-icons">
+                <a class="nav-icons" href="index.html">
+                    <h1 id="title">
+                        <span class="first-style">Swip<span class="second-style">ex</span></span>
+                    </h1>
+                </a>
+            </div>
+            <ul class="nav-icons">
+                <li>
+                    <i class="far fa-list-alt user-icons"></i>
+                </li>
+                <li>
+                    <i class="far fa-bell user-icons"></i>
+                </li>
+                <li>
+                    |
+                </li>
+                <li>
+                    <i class="fas fa-user-circle user-icons"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="body-page row m-0 d-flex">
+            <!--User Account Information-->
+            <div class="user-information">
+                <div class="user-profile">
+                    <div class="profile-info">
+                        <div class="user-info-wrapper">
+                                <img class="user-photo" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="men">
+                            <div class="account-info">
+                                <div class="inline-span-icon">
+                                    <h2>
+                                        Vlad Ermakov
+                                    </h2>
+                                    <span class="span-info">Status:&nbsp;&nbsp;&nbsp;<span class="inner-span-info">Without premium</span>
+                                    </span>
+                                </div>
+                                <i class="fas fa-cog custom-setting"></i>
+                            </div>
+                        </div>
+                        <div id="get-premium">
+                            <i class="fas fa-heart"></i>
+                            257
+                            <span class="premium-button">
+                                <i class="far fa-check-circle"></i>
+                                Get Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <ul id="menu-account">
+                    <li>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-users user-icons"></i>
+                                <span class="list-account">Start Meeting</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fab fa-centos user-icons"></i>
+                                <span class="list-account">People Nearby</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-video user-icons"></i>
+                                <span class="list-account">Channel and Streming</span>
+                            </div>
+                            <div class="notifications">12</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat-page.html" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="far fa-comments user-icons"></i>
+                                <span class="list-account">Messages</span>
+                            </div>
+                            <div class="new-notifications">12</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="far fa-star user-icons"></i>
+                                <span class="list-account">Featured People</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-gift user-icons"></i>
+                                <span class="list-account">Gifts</span>
+                            </div>
+                            <div class="new-notifications">12</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="fas fa-chart-line user-icons"></i>
+                                <span class="list-account">Raiting of Popularity</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="anchor-menu-links">
+                            <div class="menu-links">
+                                <i class="far fa-list-alt user-icons"></i>
+                                <span class="list-account">Dialy Tasks</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Chat page with list of chats-->
+            <div class="chat-container">
+                <div id="list-chat">
+                    <div class="header-chat">
+                        <div class="search-by-users">    
+                            <i class="fas fa-search"></i>
+                            <h2>&nbsp;&nbsp;&nbsp;Search by users</h2>
+                        </div>
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div id="scroll-list-chat"> 
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check checked"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check checked"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check checked"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check checked"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bubble-chat">
+                            <a class="anchor-bubble-chat" href="chat-detail-page.html">
+                                <img class="chat-img" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                                <div class="chat-elipsis">
+                                    <div class="status-container">    
+                                        <h5 class="m-0">Esmeralda Muñoz</h5>
+                                        <span class="green-circle"></span>
+                                    </div>
+                                    <span class="buble-chat-text">
+                                        <i class="fas fa-check checked"></i>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </span>                            
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-chat-list d-flex">
+                        <div class="chat-menu">
+                            <i class="fab fa-centos"></i>
+                        </div>
+                        <div class="chat-menu menu-item-2">
+                            <i class="far fa-envelope-open"></i>
+                        </div>
+                        <div class="chat-menu">
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                        <div class="small-chat-menu">
+                            <i class="fas fa-search small-footer-icon"></i>
+                        </div>
+                        <div class="small-chat-menu">
+                            <i class="fab fa-centos small-footer-icon"></i>
+                        </div>
+                        <div class="small-chat-menu">
+                            <i class="fas fa-braille small-footer-icon-bigger"></i>
+                        </div>
+                        <div class="small-chat-menu">
+                            <i class="far fa-comments small-footer-icon"></i>
+                        </div>
+                        <div class="small-chat-menu">
+                            <i class="fas fa-user small-footer-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--Chat Detil Page-->
+                <div id="chat-detail">
+                    <div class="header-chat chat-detail-pag">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-chat-title">
+                            <a class="link-to-main-page" href="index.html">
+                                <h2 class="m-0">Esmeralda Muñoz</h2>
+                            </a>
+                            <span class="online-text">online</span>
+                            <span class="green-circle"></span>
+
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div id="scroll-chat-detail">
+                        <div class="chat-conversation">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message message">
+                                <span class="message-text">Lorem ipsum dolor sit amet, id apeirian molestiae disputationi nam. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation chat-conversation-reverse">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message user-message message">
+                                <span class="message-text">Cu sensibus dignissim duo, usu ne iisque deserunt eloquentiam.</span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message message">
+                                <span class="message-text">Quod elit fierent id mei, populo fabulas definitionem ei pri. Ad eos tota summo, alii adhuc dissentiunt ex mel. Eum dicam ornatus fastidii cu.</span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation chat-conversation-reverse">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message user-message message">
+                                <span class="message-text">Ipsum utroque invidunt est an, partem omnesque sed in. Debet aperiam accusata et vel, est cu omnes placerat accommodare. Eum in dolorum civibus, harum possim sed ne. Eu feugiat delectus nam, cum in omnis apeirian. Ut sonet possit numquam eos, has vero corrumpit interpretaris id. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message message">
+                                <span class="message-text">Rebum quando id mea, eos ea sint viris utamur, per cu meis mandamus pertinacia. Sed ea quis mollis. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation chat-conversation-reverse">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message user-message message">
+                                <span class="message-text">Sea iusto sensibus reprimique ei.</span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message message">
+                                <span class="message-text">Ludus consequat consetetur id eam, cum no posse ignota contentiones. Cu pri augue inimicus, ad nam doctus menandri. Ad movet efficiendi voluptatibus mea. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation chat-conversation-reverse">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message user-message message">
+                                <span class="message-text">Cu sensibus dignissim duo, usu ne iisque deserunt eloquentiam. Nihil eripuit id sea, cu soleat vulputate has. Quod elit fierent id mei, populo fabulas definitionem ei pri. Ad eos tota summo, alii adhuc dissentiunt ex mel. Eum dicam ornatus fastidii cu.</span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message message">
+                                <span class="message-text"> Debet aperiam accusata et vel, est cu omnes placerat accommodare. Eum in dolorum civibus, harum possim sed ne. Eu feugiat delectus nam, cum in omnis apeirian. Ut sonet possit numquam eos, has vero corrumpit interpretaris id. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation chat-conversation-reverse">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message user-message message">
+                                <span class="message-text"> Pri autem repudiare at, an duo dicunt salutandi, ex audire eruditi his. Ne dolor vitae repudiare mel. </span>
+                            </div>
+                        </div>
+                        <div class="chat-conversation">
+                            <img class="img-fluid img-conversation" src="https://img.represent.com/uploads/76359eba602ef0a16f1b58917b0844d5.jpg?auto=format&w=750" alt="">
+                            <div class="container-message message">
+                                <span class="message-text">Cibo labore id pri, ad per vero aperiri alienum. Ut laudem legimus consulatu pro, mel ad illud liber, modo rebum honestatis sit no.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chat-writing-bar">
+                        <i class="fas fa-paperclip"></i>
+                        <input id="message-bar" name="message-bar" type="text" placeholder="Your message...">
+                        <i class="far fa-smile"></i>
+                        <i class="fas fa-upload"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
